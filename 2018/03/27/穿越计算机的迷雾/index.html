@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="书籍," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="从某种意义上说，计算机就是开关。我们用继电器开关做成了加法机，一台加法机的构造说白了其实就是一大堆开关的精巧组合，而人们之所以能够进行这种组合，利益于物理学、数学和逻辑学方面的最新进展，以及某些先行者将它们融合的非凡才能。">
+<meta name="keywords" content="书籍">
+<meta property="og:type" content="article">
+<meta property="og:title" content="穿越计算机的迷雾">
+<meta property="og:url" content="http://yoursite.com/2018/03/27/穿越计算机的迷雾/index.html">
+<meta property="og:site_name" content="四维">
+<meta property="og:description" content="从某种意义上说，计算机就是开关。我们用继电器开关做成了加法机，一台加法机的构造说白了其实就是一大堆开关的精巧组合，而人们之所以能够进行这种组合，利益于物理学、数学和逻辑学方面的最新进展，以及某些先行者将它们融合的非凡才能。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-03-27T08:21:55.499Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="穿越计算机的迷雾">
+<meta name="twitter:description" content="从某种意义上说，计算机就是开关。我们用继电器开关做成了加法机，一台加法机的构造说白了其实就是一大堆开关的精巧组合，而人们之所以能够进行这种组合，利益于物理学、数学和逻辑学方面的最新进展，以及某些先行者将它们融合的非凡才能。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/03/27/穿越计算机的迷雾/"/>
+
+
+
+
+
+  <title>穿越计算机的迷雾 | 四维</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">四维</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/27/穿越计算机的迷雾/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="空间">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="四维">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">穿越计算机的迷雾</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-27T06:20:38+08:00">
+                2018-03-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/03/27/穿越计算机的迷雾/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/03/27/穿越计算机的迷雾/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>从某种意义上说，计算机就是开关。我们用继电器开关做成了加法机，一台加法机的构造说白了其实就是一大堆开关的精巧组合，而人们之所以能够进行这种组合，利益于物理学、数学和逻辑学方面的最新进展，以及某些先行者将它们融合的非凡才能。<br><a id="more"></a></p>
+</blockquote>
+<h3 id="电"><a href="#电" class="headerlink" title="电"></a>电</h3><ul>
+<li>电可以生磁，可以用来制作电磁铁，这在当时的确是非常新奇的事情。但是人类不可能总是玩电磁铁，这不符合人类的天性，人类的天性是熟悉了一件事情之后，再接着探索。</li>
+<li>声音本质上是一种振动，它可以通过空气或者木头这样的东西传播。所以在没有空气的地方，比如在真空中，声音是无法传播的。当你用力敲击一面锣的时候，锣的表面不停地“哆嗦”，会推拉四周的空气分子跟着它“哆嗦”，这样声音就传出去了。</li>
+<li>“波”通常指的是水的涌动，当你向池塘里扔一块石头时就形成了波。和水波一样，声音也是一种波，不同的声音有不同的波形。找一把钢尺，将它的一端固定起来，然后扳动另一端，此时，你听到了什么？</li>
+<li>我们知道，磁可以生电，这称为电磁感应。交流电通常就是在大型发电厂里用电磁感应的方式产生的。</li>
+<li>也许你对无线电波感到陌生，但是你的身体对它并不陌生。通常，无线电波又叫电磁波，尽管看不见摸不着，但它就在你的身边飞舞，在你的身上感应出微弱的电压。</li>
+<li>从前面的讲解中我们知道，交流电的波形是周期性重复的。导体在磁场中每旋转一周，波形重复一次。在电学里，重复速度称为频率，它的单位是赫兹，用“Hz”来表示，为的是纪念赫兹先生为我们发明了第一个吓人的电磁波发生器和接收器，封住了那些对电磁波持怀疑态度的人的嘴。如果在1秒里重复了1次，就称它的频率是1Hz，如果重复了100次，就是100Hz。</li>
+<li>在我国，政府对电力供应的各项指标有统一的规定，其中要求交流电的频率必须是50Hz。这意味着，我们平时所用的电，它在1秒钟之内要经历50次的正负极翻转和电压起伏。50Hz不算高，但不能再低了，要是太慢，你家里的灯泡就会慢慢亮起来，然后又慢慢暗下去，周而复始，而所有的电器也无法正常工作。要是这样的话，这个世界上像我这样的近视眼肯定又会增加许多。</li>
+<li>50Hz是一个低得可怜的频率，就连我们平时说话的声波频率都比它高得多。这样低的频率，事实证明，它只能在导线的周围产生变化的磁场，根本辐射不出去。要远距离辐射电磁波，除了加大能量之外，还需要提高频率。现在，我们用收音机收听到的无线电广播，它的频率在500 000Hz以上，接收和发送手机信号的频率则在800 000 000Hz以上。</li>
+<li>所以通常还使用下面的换算单位：<blockquote>
+<p>1kHz（千赫）=1 000Hz1MHz（兆赫）=1 000kHz<br>1GHz（吉赫）=1 000MHz记住，下次你再用蓝牙耳机打电话、听MP3，或者用蓝牙技术在手机之间传送铃声的时候，不要忘了蓝牙使用的频率是2.4GHz。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="抽象思维"><a href="#抽象思维" class="headerlink" title="抽象思维"></a>抽象思维</h3><ul>
+<li>抽象思维不借助于头脑中的形象。比如计算168+33×105或者1003这样的数学题。在这里，你用不着想象自己能看到168个鸡蛋，或者33条狗，得出这两道数学题的结果，和你当时所想到的东西没有关系。所以，做数学题的过程是抽象思维。</li>
+<li>抽象思维是人类最主要的思维形式，差不多也是我们人类所特有的。当人类还像其他生物一样，是原始海洋里飘浮着的营养碎片的时候，没有这种技能；当和其他水里的朋友们分道扬镳，迁往陆地上生活的时候，也没有这种技能。但是，当我们从猴子变成人的时候，仿佛是一下子，抽象思维就产生了。</li>
+<li>其他动物可能也有一些简单的抽象思维能力，但不如人类有效。比如，你可以训练家犬用嘴叼着一桶水去救火，天长日久，这狗一旦看见着了火，就会叼一桶水去把火扑灭。但是，如果你把桶里的水换成了油，这畜生也照浇不误。这意味着，“水能灭火，油能助火，这是油，所以不可以用来救火”的抽象思维能力是低级动物们望尘莫及的。看得出来，和形象思维的想象与联想不同，抽象思维总是要从已知的事实出发，计算出一个结果，得出一个新的结论；或者用一组被公认为是真实的材料，证明某种观点或说法。对于这两个过程，用那些研究抽象思维的人们的行话来说，分别是推理和论证。</li>
+<li>抽象思维过程可能掺杂着形象思维，但它们不是至关重要的因素。比如有一天你在山上放牛，忽然看见对面山上冒起了浓烟，于是你就知道对面山上正在烧火。在这个例子里，有形象的存在，比如浓烟，以及你仿佛看到正在着火时的情景。不过这都不是最重要的，最重要的是抽象思维可以把浓烟和着火这两种看似不相干的事情联系到一起，而形象思维通常不能。抽象思维不是凭空进行的，就像形象思维中的形象一样，一定要借助点什么。但是，和形象思维需要借助于形象不同，抽象思维依赖的是万事万物在大脑中的印象、认识、认知，以及对它们有别于其他事物的本质特征的概括。比如前面的油、火、烟，等等，这些称为概念。<br>要想把概念讲清楚不是一件轻松的事儿，因为你很可能简单地认为它只是从嘴里说出来的，或者写在纸上的一个词语，比如“雨”。不是这么简单。概念事实上存在于你的大脑之中，是你的一种思想活动，是你对万事万物在大脑中的认知。当你看到一棵树，或者听到“树”这个词的时候，你大脑中所反映和意识到的内容差不多就是概念。这里面有大脑中浮现出的形象（有叶子有枝干，根在地下，往天上长），也包括一些深层次的认知（具有木质实心茎秆的多年生植物）。</li>
+</ul>
+<h3 id="逻辑学"><a href="#逻辑学" class="headerlink" title="逻辑学"></a>逻辑学</h3><ul>
+<li>人都是要死的；苏格拉底是人，所以苏格拉底是要死的。</li>
+<li>这段话流传范围很广，差不多还算有点儿文化的人都能背诵。从抽象思维的角度来看，这是一个典型的从概念出发，根据已有的命题得出一个新命题的推理过程。类似于中国的“名”或者“名辩”这样的叫法，在古希腊，亚里士多德研究的对象属于叫做“λoγos”的范畴，有“词语”、“言语”、“思维”、“推理”的意思。在英语里，对应的单词是“logic”，发音听起来像“老饥渴”，让人觉得它和吃喝有些关系。在中国近代史上，严复将其称为“名学”。1902年，他翻译引进了《穆勒名学》。后来，干脆把这个外来词连同它的外国发音一起引进来，直接叫做“逻辑”，而这门学问则叫做“逻辑学”。</li>
+<li>在联合国教科文组织的学科分类目录中，逻辑学是与数学、物理学等并列的七大基础学科之一。</li>
+<li>在逻辑学中，概念及其运用是一个复杂的话题，不是想象中的那么简单。在亚里士多德那里，“人都是要死的”和“亚里士多德是人”这两句话，里面的“人”是同一个概念。而在这里，“鲁迅的作品不是一天就能读完的”和“《孔乙己》是鲁迅的作品”这两句话，尽管都有“鲁迅的作品”，但不是同一个概念，前者是鲁迅作品的总称，而后者则仅仅是指“《孔乙己》”。这样就违反了三段论的格式，以至于发生错误。逻辑学要求，在一个单独的抽象思维过程中，概念和命题必须保持一致，这叫做同一律。如果违反了同一律，就会发生我们在日常生活中所说的“偷换概念”、“偷换命题”或者“混淆概念”这类错误。</li>
+<li>亚里士多德开创的逻辑学是古老的，超过了两千年。所以，相对于逻辑学后来的发展而言，它是古典逻辑。</li>
+<li>三段论有很多种格式，其中最典型的一种格式是这样的：所有M是P；所有R是M；所以，所有R是P。一旦固定了这样的格式，在往后的任何时候，如果大脑中出现了这样的抽象思维，只要前两句是真命题，那么，推理的结果，也就是第三句话，就必然也是真的。唯一需要注意的是，在前两个命题中，M必须遵循同一律，也就是保持同一种概念不变。</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/书籍/" rel="tag"># 书籍</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/27/计算机是怎么跑起来的/" rel="next" title="计算机是怎么跑起来的笔记">
+                <i class="fa fa-chevron-left"></i> 计算机是怎么跑起来的笔记
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/27/Web全栈工程师的自我修养笔记/" rel="prev" title="Web全栈工程师的自我修养笔记">
+                Web全栈工程师的自我修养笔记 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div class="ds-thread" data-thread-key="2018/03/27/穿越计算机的迷雾/"
+           data-title="穿越计算机的迷雾" data-url="http://yoursite.com/2018/03/27/穿越计算机的迷雾/">
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">空间</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#电"><span class="nav-number">1.</span> <span class="nav-text">电</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#抽象思维"><span class="nav-number">2.</span> <span class="nav-text">抽象思维</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#逻辑学"><span class="nav-number">3.</span> <span class="nav-text">逻辑学</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">空间</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"your-duoshuo-shortname"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

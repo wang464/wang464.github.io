@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="书籍," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="计算机：一部历史 计算机语言其本质是调用系统的接口来实现自身的功能">
+<meta name="keywords" content="书籍">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机:一部历史的笔记">
+<meta property="og:url" content="http://yoursite.com/2018/03/30/计算机-一部历史/index.html">
+<meta property="og:site_name" content="四维">
+<meta property="og:description" content="计算机：一部历史 计算机语言其本质是调用系统的接口来实现自身的功能">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-04-15T03:05:01.784Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="计算机:一部历史的笔记">
+<meta name="twitter:description" content="计算机：一部历史 计算机语言其本质是调用系统的接口来实现自身的功能">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/03/30/计算机-一部历史/"/>
+
+
+
+
+
+  <title>计算机:一部历史的笔记 | 四维</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">四维</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/30/计算机-一部历史/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="空间">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="四维">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">计算机:一部历史的笔记</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-30T10:28:20+08:00">
+                2018-03-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/03/30/计算机-一部历史/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/03/30/计算机-一部历史/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="计算机：一部历史"><a href="#计算机：一部历史" class="headerlink" title="计算机：一部历史"></a>计算机：一部历史</h2><blockquote>
+<p>计算机语言其本质是调用系统的接口来实现自身的功能<br><a id="more"></a></p>
+</blockquote>
+<ul>
+<li>当时的科学家需要一些新的思想，来简化编程过程，提高编程能力。对此，威尔克斯（在几年后）提出了一个方法，称为微程序设计。当时，麻省理工学院正在研制的旋风计算机〔11〕 （Whirlwind）给了他部分灵感，让他意识到，并不是每一条低级指令——比如除法——都需要电子电路来执行。复杂的指令完全可以分解成一系列简单的指令，而微代码编写出来的微程序可以作为二进制机器代码和硬件之间的桥梁。事实证明，这一方法实用性很强，时至今日，复杂指令集计算机〔12〕 （Complex Instruction Set Computer，简称CISC）处理器依然采用了这一思想原理，以执行高度复杂的操作。而精简指令集计算机（Reduced instruction set computer，简称RISC）处理器则不使用微编程。</li>
+<li>但是即便是使用微代码，计算机编程人员依然需要编写一长串的数字，即机器代码指令。而且，早期的编程人员还因为机器的内存容量极其有限而备受掣肘。EDSAC的内存只有两千字节左右（放到今天，一部手机的内存都比它大几百万倍）。为了解决这些问题，威尔克斯的团队又想出了一个妙招——编写子程序。研究人员意识到，许多程序在运行的过程中，都需要重复执行某个操作——比如在某个复杂的数字运算中，需要多次进行开平方操作。如果每次开平方都得把平方根代码写上，那么程序当中就会出现许多重复代码，占用不必要的空间，使程序变得庞大而低效。这就好比你在写一个句子时，不仅构造了完整的语法结构，还将句中每个词语的定义也写了下来。比方说有个好端端的句子： 一只小猫坐在地毯上。结果被你写成了： 一种以“只”为度量单位、称为“猫”的小型家养猫科食肉动物，以臀部着物的方式坐在一种名为“地毯”的装饰地面的厚实织物上。为了简化编程过程，威尔克斯的方法是建立子程序库，也就是将常见的函数   单独列出，集中起来，就像把常见的词语及其释义收录在词典中一样。一旦程序在运行的过程中需要使用到某个常见函数，计算机就会在子程序库中“查找定义”，执行相应的子程序代码，根据输入值进行运算，再将运算结果返回。    注   常量的原型</li>
+<li><ul>
+<li>汇编语言在计算机领域举足轻重，20世纪90年代的所有程序都是由汇编语言写成。几十年来，有两种常见的程序只采用汇编语言：一是计算机游戏（因为开发人员希望尽可能地提高游戏的运转速度，同时尽可能给玩家带来极致丰富的游戏体验），二是操作系统。即便是在当今时代，程序员要想编写速度超快而形式简洁的代码，都免不了要采用一些汇编语言。</li>
+</ul>
+</li>
+<li>汇编语言对于许多程序员来说依然难度太大。如果你想处理更复杂的思想和概念，那么，纠结于个别的跳转指令只会拖累你的步伐。如果你希望自己的程序能够在完全不同的处理器上运行，那就需要采用高级的编程语言，也就是独立于底层硬件的计算机语言。 1953年，随着电子计算机在全世界遍地开花，发明抽象编程语言的问题开始受到广泛关注。莫里斯·威尔克斯受邀主持了美国计算机协会（ACM）在麻省理工学院召开的一期研讨会，专门探讨这个问题（当时的会议主题为自动编程）。威尔克斯至今还清楚地记得当年会上的讨论情况。“与会者的意见分歧相当尖锐。有些人认为，凡是试图绕开困难的做法都是误入歧途。程序员只有老老实实地恪守本分，编程领域才会取得更大的发展。另一方面，还有一些人认为，只有新的技术才具有实实在在的实用价值。”（时至今日，计算机科学家当中依然存在这两派的纷争。）许多研究人员已经在试验新的、更简单的编程语言。早在1949年，约翰·莫奇利就发明了一种语言，称为简代码（Brief Code），后来更名为短代码（Short Code）。短代码虽然使用起来简单许多，但是需要翻译——也就是说，计算机每次运行这种语言编写的程序，都得临时将短代码翻译成机器代码。这就意味着，这种程序的运行速度比机器代码写成的程序慢54倍。与此同时，在英国曼彻斯特，一位名叫埃里克·格伦尼（Alick Glennie）的研究人员发明了另一种语言。 这种语言易于使用，可通过另一种程序自动转换为机器代码，因此具备简单实用、运行速度快的双重优势。格伦尼将其称为自动代码（Autocode）。</li>
+<li>C语言（以及在此基础上形成的诸多语言，如C++、C#、Objective C）或许是世界上应用最广泛的计算机编程语言之一。人们当前使用的许多众所周知的操作系统（比如UNIX、Linux、Mac OS X、Windows）都是用C语言写成的。如今，几乎每一台计算机上都搭载了C语言编译器，方便用户使用C语言编写代码。以下列出的快速排序函数</li>
+<li>数据库 随着编程语言的功能日渐强大，计算机的速度日益加快，容量日益扩大，可靠性日益增强。很快，计算机科学家就意识到，除了计算方程式的结果，计算机还可以在更广阔的领域大有可为。它们可以快速存储和处理大量的数据。如果只是单纯存储一系列数字，那倒不是什么难事，但是，如果存储的是病历记录或者财会记录，那么情况就会复杂许多。这就要求计算机必须能在短时间内迅速找到特定的信息条目——比如某一份病例中记述的病因，或者某一天产生的支付记录。怎样编排数据才能帮助我们轻松地找到所需信息呢？</li>
+<li>为了便于大家理解关系数据库，我们用词典来打个比方。关系数据库就好比一系列分类词典，比如动词词典、名词词典、副词词典等等。如果你想查找某个单词——比如动词“bow”，那就只需要翻阅动词词典。如果你想找“bow”的名词词义，那就只需要翻阅名词词典。这比从头到尾地翻阅一本超厚的大词典要高效多了。 关系数据库也是同样的道理，它采用关系键，将不同的记录〔28〕 联系起来。比方说，一个员工信息数据库可能会以员工编号作为关系键。知道了工号，你就可以在各个数据库表（好比各个分类词典）中分别查询员工的工资信息、家庭住址、计算机登录情况等等。每个数据库表中的值都可以作为关系键，用于在其他数据库表中查找相应的信息。也就是说，员工的职位描述也可作为关系键，用来查询员工是否具备参与机密工作的资格。</li>
+<li>年代末出现了一种特殊的编程语言，用户可以通过它查询数据库中的复杂信息。这种语言脱胎于关系代数和微积分，全称为结构化英语查询语言（SEQUEL，即Structured English Query Language），后来又很快简称为结构化查询语言（SQL）。SQL支持查询、表达式、从句等多种编程元素</li>
+<li>除了发明实用的编程工具，研究人员很快意识到，还有更好的软件设计方法亟待开发。这就好比汽车制造商不能把仅仅把目光放在硬件上，还应着眼于汽车的用途、目标客户的定位、成本开销的大小，从而将生产问题化整为零，分解成一个个具体的问题，比如：应该采用什么样的发动机、传动部件、转向系统、制动系统、车轮系统和座椅系统？车内需要容纳多少人？生产一台汽车需要多少时间？编写软件也是同样的道理。一个大型软件项目可能会比制造汽车复杂得多，怎样设计才能确保项目的高效运转？ 研究人员很快意识到，要做到这一点，必须确立一个明确的软件生命周期〔37〕 。首先，你必须合理定位产品和项目需求。接下来要做的，就是设计、运行和测试软件，并将其运行情况清晰地记录下来。最后要做的，就是发布软件，或许在这个阶段，你还需要指导用户如何高效地使用软件、如何进行必要的维护工作。</li>
+<li>控制流的英文是control flow，它是程序执行中所有可能的事件顺序的一个抽象表示。</li>
+<li>模块化设计，简单地说就是程序的编写不是开始就逐条录入计算机语句和指令，而是首先用主程序、子程序、子过程等框架把软件的主要结构和流程描述出来，并定义和调试好各个框架之间的输入、输出链接关系。逐步求精的结果是得到一系列以功能块为单位的算法描述。以功能块为单位进行程序设计，实现其求解算法的方法称为模块化。模块化的目的是为了降低程序复杂度，使程序设计、调试和维护等操作简单化。</li>
+<li>不能让截然不同的网络永远泛滥下去。1972年，罗伯特·卡恩（Robert Kahn）开始供职于高级研究计划局的信息处理技术办公室（Information Processing Techniques Office，简称IPTO）。他意识到，必须为阿帕网开发出更好的方法，以最大限度地减少信息传输过程中出现的错误。他雇佣了文特·瑟夫做助手。1974年，他们发布了一种新的“连接语言”，也就是便于不同的计算机之间互相沟通的互联网协议。他们的方法在今天被称为互联网协议套件，其实，更通行的叫法是TCP/IP，它是“传输控制协议和互联网协议”（Transmission Control Protocol and the Internet Protocol）的英文缩写。不过，这样的叫法稍微有些简略了，因为计算机网络体系结构的通信协议至少可以划分为四个不同的层次。</li>
+<li>为了便于大家理解互联网协议的概念，我来给大家打个比方。假设有两家大企业的总裁想要共享某些信息。第一家企业的老板决定跟第二家企业的老板商谈，给她发送一份文件。当然，他身份地位高，手头事务忙，不可能亲力亲为，于是就命令手下的通信总监打理细节问题。通信总监办事情非常彻底。首先，他联系了对方公司的通信总监，确认了接收事宜。接着，他仔细地将文件切分成细小的信息块，对每个信息块都附上了标签，注明了信息内容和接收人。然后，他将信息块连同标签一起送到公司的收发室，将每一个信息块精心打包，将地址标注在包裹上，等待邮递员派送。邮递员将好几个包裹收集起来，放在箱子里妥善保管，然后确定将邮件派送到对方企业收发室的最佳路径。如果他在中途损坏了某些包裹，或者发现它们的包装不够严实，就会折返回来要求更换。对方企业收到包裹后，会将它们转交给通信总监。通信总监则根据标签，细心地将零散的信息块重新整合成完整的文件。如果发现有的信息块在派送的过程中不幸丢失或损坏，她就会要求第一家企业重新发送相应的信息块。等到所有的信息块都顺利送到、组装到位后，她就会将整合好的文件提交给自己的老板。 计算机网络通信或多或少也是这个道理。上面所说的老板就相当于计算机的应用程序，比如网页浏览器和网页服务器；通信总监相当于TCP（传输控制协议）层；收发室相当于IP（互联网协议）层；邮递员相当于地址层，也就是低层次的传输方法，比如以太网（Ethernet）、IEEE 802等局域网协议，以及点对点协议（Point-to-Point Protocol，简称PPP）等框架协议。</li>
+<li>网络编址，编织成功的未来 从网络发展的早期阶段开始，人们就意识到，计算机需要有地址，这样才能确定信息的发送方和接收方，从而确保正常通信。编址的方案之一，就是给计算机分配号码（正如电话公司给我们分配电话号码一样），然后将编号存储在主目录中。但是这样做有很多问题：号码对人来说很难记忆，使用英文单词会更方便一些；况且，如果所有编号都保存在一个目录中，那么同时查询地址的请求就会太多，导致运行速度缓慢；更糟糕的是，一旦目录出错，整个网络系统就会瘫痪。阿帕网等大多数网络都采用了两种类型的地址。一种是由英文字母或名称组成，另一种是由数字组成。人们平常书写时使用的是便于识记的英文字符，机器收到字符后，将其转换为对应的数字，这样便能知道信息接收方的精确地址。互联网也采用了这套方法，并且沿袭至今。我们现在看到的网站域名就是互联网的编址方案之一（与之对应的另一套方案就是IP地址）。</li>
+<li>他给我们通俗地讲解了其中的过程。“假设我在地址栏中输入的是bbc.co.uk，”他说，“首先我们必须明确的是，bbc.co.uk只是一个域名。要想访问网站，浏览器必须知道与之对应的数字化IP地址才行。” “将域名转换为IP地址的过程称为域名解析，域名解析需要专门的服务器，称为域名服务器（domain name server，以下简称DNS）。我在浏览器中输入域名后，计算机就会询问本地DNS，‘bbc.co.uk的IP地址是什么？’”“本地DNS可能也不知道答案，不过它知道全世界仅有的13台互联网根服务器〔19〕 的IP地址。于是，它就会去找其中一台根服务器，‘我想知道bbc.co.uk的IP地址。’” “根服务器一般不会存储具体的域名，所以它也不知道bbc.co.uk的IP，但它知道uk这个顶级域〔20〕 的服务器IP，于是，它就会回复说，‘这些是uk域名的服务器地址，你找它们问问吧。’”“于是，本地DNS就会询问其中一个uk域名服务器，‘bbc.co.uk在哪里？’，对方就会回答，‘我不知道bbc在哪里，但我知道co域名的服务器地址，你找它们问问吧。’”“接下来，本地DNS向co域名服务器发送请求后，终于找到了bbc域名的服务器地址。它向对方询问，‘bbc.co.uk在哪儿？’对方就会把IP地址报给它，于是它就会把结果报给我的计算机。” “之后，我的网页浏览器就会开始连接bbc的服务器。本地DNS会发出建立TCP连接的请求，bbc的服务器接受请求后，连接就建立起来了。我的计算机会向对方索取文件，而对方则会直接把文件发送到我的浏览器上。”</li>
+<li>这样的域名解析方式看起来似乎太过复杂，但是它能确保整个网络系统始终保持极为稳定的状态，不会轻易瘫痪。没有一台服务器掌握着所有计算机的IP地址，但是很多服务器都掌握着部分计算机的地址。因此，就算互联网的重要服务器瘫痪，也不会影响到普通用户。毕竟，不管有多少台服务器瘫痪，总会有其他服务器可以派上用场。</li>
+<li>伯纳斯-李为万维网的诞生立下了三大不可埋没的功劳。第一个重要贡献在于，他提出了一个重要的思想：每个文档或图片都应该有自己的标识符，正如每台计算机在互联网中都有自己的标识符。伯纳斯-李在与互联网工程任务组合作期间，决定制定一个与UNIX目录结构类似的标准，采用正斜杠“/”将文件和目录分隔开。举个例子，如果有一个Web文件，文件名为“welcome.html”，所属目录（或文件夹）为“news”，运行Web文件的服务器地址是“bbc.co.uk”，那么，它的统一资源定位符（Universal Resource Locator，简称URL，俗称网页地址）就可以写成“</li>
+<li><a href="http://www.bbc.co.uk/news/welcome.html" target="_blank" rel="noopener">www.bbc.co.uk/news/welcome.html</a></li>
+<li>”。 这也就是为什么我们如今访问特定的网页时都需要输入URL地址。URL表明了文件、目录的精确位置和计算机的地址。用户在Web网页上看到的所有文件，都是由浏览器从URL地址上传上来的——网页上的图片、文本、广告很有可能来自不同的地方。它们都有自己的URL地址，浏览器可以据此将它们一一下载，并展示给用户。伯纳斯-李的第二个重要贡献在于，他发明了一种特殊的高级语言，称为超文本标记语言（hypertext markup language，简称HTML）。它可以告诉浏览器如何显示Web网页中的复杂内容，使用起来简易灵活，任何想设计Web网页的人都可以轻松上手。此外，HTML适用于广泛的平台，任何HTML文件都可以通过Web服务器迅速、轻易地传输到任何类型的计算机平台上，再由该平台的Web浏览器进行翻译，从而将编写者想要实现的一切效果——文本、图像、超链接等各项内容都在网页中显示出来。为了方便用户使用，HTML只采用文本和一系列代码（或标签），写出来的文件非常简洁，下面举一个例子： 以下是该文件经过Web浏览器翻译后形成的网页效果图：从图中可以看出，网页的标题显示在了浏览器窗口的标题栏里。</li>
+<li>伯纳斯-李的第三大贡献在于，他发明了超文本传送协议（Hypertext Transfer Protocol，简称HTTP），HTTP协议可以将HTML文件从Web服务器传送到Web浏览器。这种语言并不是TCP/IP的替代协议，而是基于TCP/IP的一个应用层协议〔24〕 。不知道大家还记不记得我们之前打过一个比方，讲的是两个总裁想要共享信息的例子，在这个例子当中，TCP层相当于通信总监；IP层相当于收发室。如果把HTTP也放进去，它就相当于一个统一的指令集，两名总裁可以使用这种特殊的语言互相索要资料，这些资料也就相当于万维网中的文本、图片和视频。两名总裁想要传达的信息还是像从前一样，通过TCP/IP层分割成块，分开传输。</li>
+<li>两台计算机建立连接后，HTTP协议假定其中一台是客户端，另一台是服务器。客户端（比如Web浏览器）采用HTTP语言，向服务器发送请求，索要特定的资源，比如一个HTML文档或一张图片。服务器采用同样的语言返回特定的信息（比如资源的大小、保存时间以及细节信息，以便客户端查询本地的缓存）。如果客户端的本地缓存中没有该纪录，则服务器会将客户端索要的资源发送过去。HTTP协议中定义了好几种命令（也叫“动词”），以方便客户端和服务器互相发送信息。如果你的浏览器需要读取数据，就会向服务器发送“显示”（GET）命令。如果网页上有一张表格，你填好之后，点击“发送”，浏览器就会连同你刚才输入的数据一起，向服务器发送“投递”（POST）命令。</li>
+<li>现在的万维网已经能够使服务器和客户端之间采用非常高级的通信形式。程序可以运行，数据库可以检索。用户可以在一些特殊的网页上创建和编辑内容，这些网页统称为维基（wiki）。社交网站（比如Facebook和LinkedIn）、博客等新事物广受欢迎，它们正彻底革新着人与人之间的交流方式。Web视频成为了新时代的电视机。不过，纵使网络设计的创新千变万化，精巧复杂，它们的根基无非是一些简单质朴的概念，那就是URL地址、HTML语言和HTTP协议。</li>
+<li>要想保证网络安全，方法主要有三种。每一种都比上一种更先进，更安全。第一种方法就是，一不做二不休，把软件设计得无比复杂，让人根本弄不懂它的工作机制——将内部算法完全保密。库尔图瓦表示，这种方法最基本，也最常用。“这就好比你在做一件人人都琢磨不透的事情。这种方法之所以有效，是因为没有人知道你到底在做什么，这样一来，你所做的事情就是完全保密的。有些人把它称为‘隐晦式安全’（security by obscurity）。直到现在，商业活动大多采取这样的原则。不过，这种方法很早以前就被破解了，它并不能很好地保障网络安全，因为黑客往往可以将软件破解。只要给他们足够的时间和咖啡，他们就能侵入系统。” 二战期间，“隐晦式保密”的效果并不好。政府很快意识到，他们需要更安全的通信方法，让敌人破解不了。因此，图灵、香农这样的编码者和破译者在战时开发出了第二代安全保密方法——采用密钥保证信息安全。发信人使用密钥将信息加密，相当于把信息锁在盒子里，将盒子（加密信息）发给收信人，收信人使用同样的密钥才可以解锁（破译）。就算有人把锁的构造（加密方法）琢磨透了，如果没有密钥，照样打不开。采用这种方法可以使需要保密的信息量大大减少。“你可以把加密算法、源代码乃至密码系统的任何细节都公开，”库尔图瓦说，“只要把一小部分关键的信息——也就是密钥保护起来就可以了。”如今，这套对称密钥加密算法已经广为人知。我们平时给自己的计算机和银行账号设置密码，就是采用了这种方法。密码就相当于密钥。我们将计算机和银行账号用密码“锁住”，只有输入相同的密码才能“解锁”。但是，采用这种方法的问题在于，你得把密钥与收信人共享。显然，你不能将密钥通过互联网传输，以免密钥在传输过程中被人监控和拦截。（如果你想对密钥本身加密，就得再共享一个密钥来解密它）。因此，为了保险起见，重量级信息的密钥或许得通过快递实体传输，或者当面递交。此外，采用这种方法还会带来另一个问题：需要创建的密码太多。 很多人的账户密码太多，到最后连自己都不记得了。你去给公司安全审计就会发现，很多人在计算机和显示器周围贴满了便笺——这一般就是他们记录密码的地方。柯尔斯坦谈到这个问题时笑了起来：“很多人为了确保账户安全，坚持勤换密码，结果密码太多，根本记不住，只好专门找一个地方写下来。但是，写出来贴在显眼位置的密码还叫密码吗？”只要找到密码，拦截传输中的密钥，或者通过破解加密算法拿到密钥，就可以破译通过该密钥加密的任何信息。如果你把所有账户的密码设成同一个，那就麻烦大了。后果很严重。“很多公司的安全系统都非常薄弱，”库尔图瓦说，“他们使用很多张智能卡〔26〕 ，每张卡的密码都一样。只要破解了一张卡的密码，所有的卡都可以随便使用了。”</li>
+<li>第三代加密算法称为非对称密钥加密（又叫做公开密钥加密）。它的数学原理极为精妙，但又非常简单。所谓非对称密钥，是指一对加密密钥与解密密钥。你可以将加密密钥公开，解密密钥私人存放，这样一来，每个人都可以用公开的加密密钥给你发送信息，但是这些加密信息只能通过你的私人密钥解密。这就好比你把一个自动上锁的盒子交给别人，自己保留钥匙。人人都可以往盒子里放信息，但只有你的密钥才可以打开盒子。你不需要再和别人共享私钥，也不需要再对密钥本身加密。 非对称密钥加密算法的提出，是数学史上的一个奇迹，每个人都对此深感意外。库尔图瓦一提起它就变得激动不已：“谁也没有想到，这种事情竟然会发生。公开密钥加密算法突然就问世了，一点预兆也没有，之前没有任何人能从数学上证明这种算法真的存在。这是一项重大发现——是科学史上的一大奇迹。”非对称加密算法的问世，也给万维网带来了一场革命。在此之前，尽管银行体系已经建立自己的安全网络，并将其用于通信和金融交易，但相关技术尚未惠及普通大众。1994年，网景（Netscape）浏览器推出HTTPS——即HTTP的安全版，采用公开密钥加密技术对HTTP数据进行加密。2000年，HTTPS已成为全球网络通行的标准协议。要想判断某个Web网页是否采用了安全的HTTP，只需要查看它在浏览器中显示的URL地址就可以了。凡是URL地址以“https”开头的网页都采用了安全的HTTP。</li>
+<li>根服务器主要用来管理互联网的主目录，全世界只有13台。1个为主根服务器，放置在美国。其余12个均为辅根服务器，其中9个放置在美国，欧洲2个，位于英国和瑞典，亚洲1个，位于日本。所有根服务器均由美国政府授权的互联网域名与号码分配机构ICANN统一管理，负责全球互联网域名根服务器、域名体系和IP地址等的管理。</li>
+<li>顶级域（或顶级域名）是互联网DNS等级之中的最高级的域，是域名的最后一个部份，即是域名最后一点之后的字母，例如在</li>
+<li>example.com</li>
+<li>这个域名中，顶级域是.com。</li>
+<li>蜂窝网络、流动网络或移动网络是一种移动通信硬件架构，分为模拟蜂窝网络和数字蜂窝网络。由于构成网络覆盖的各通信基地台的信号覆盖呈六边形，从而使整个网络像一个蜂窝而得名。</li>
+<li>整个计算机图形学体系还只是基于两个简单的概念：位图和矢量图〔7〕 。位图又叫做栅格图，简单地说，位图就是数码相机拍出来的相片。它由像素组成，每个像素都被分配一个特定位置和颜色值。位图放大后会变得模糊不清，看起来像是有许多小方格。这是因为，图片放大的其实只是像素点。相机上的光学放大之所以数码放大效果更好，原因在于，数码放大只是将像素点的尺寸放大，并未增加任何细节，而光学放大通过光学镜头结构的变化来实现变焦，就像显微镜一样，能够将更多的细节展示出来。 与位图不同，矢量图是计算机严格按照运算结果实时绘制出来的。这就好比我们小时候在数学课上做过的事情：在坐标纸上描点，用尺子画线，将点与点连接起来。在矢量图中，所有的图形都是由点和线构成，就连图中嵌入的文字也是如此。它的优势在于，每次放大或缩小图像时，计算机都会重新计算所有线段的长度和位置，然后在维持原有清晰度的情况下，将图像重新绘制出来。也就是说，矢量图不会失真。（伊凡·苏泽兰的几何画板可能是世界上第一款矢量图形设计软件。）我们可以利用矢量图玩出不少新花样，比如构建复杂的三维模型：可以用三角形、四边形或者五边形组成数以千计的细小网格，让计算机在网格中填充颜色，然后用着色器（譬如高洛德着色算法）渲染出逼真的光影效果。有了大量细小的网格，再加上一些化腐朽为神奇的立体渲染技巧，我们就能将曲面造型构建出来。除此之外，一些简单的构图规律也可以用来制造三维立体感，比方说透视规律：可以绘制透视图，使画面中的物体呈现出近大远小、近长远短、近清晰远模糊的变化特点，同时采用一些巧妙的消隐算法，将当前观察点看不见的三维模型表面隐藏，从而逼真地反映物体的空间形象。计算机图形学领域有大量令人称奇的美图方法，可以制造精巧繁复而又美不胜收的光照、雾化和渲染效果，模拟水波、皮毛、织物等丰富多彩的质感纹理。如果时间充裕，我们甚至还可以采用光线跟踪技术。为了便于大家理解光线跟踪的概念，我们首先假设屏幕内的世界是真实的，显示器只是一个完全透明的框架，那么屏幕内的世界里应该有哪些光线会透过屏幕射入人的眼睛呢？光线跟踪技术所追踪的，正是那些能够射入人眼的光线。它的原理是从视点出发，逆向追踪光线的传播路径。比如光线会不会从水面反射出去？会不会穿过玻璃，发生折射？物体的瞬间移动会不会造成画面模糊？如今，《阿凡达》（Avatar）、《怪物史莱克》（Shrek）等好莱坞大片大量采用了光线跟踪等计算机图形学技术，用于后期制作。</li>
+<li>光线跟踪技术虽然效果逼真，但运算量庞杂，实时处理速度慢。对于游戏等实时性要求高的大型复杂场景或虚拟现实系统来说，要想做到实时性与真实感并重，就必须将位图和矢量图巧妙地结合起来。要想用矢量图作出复杂多变、自然度高的图像难度极大，矢量图的线条往往太过干净、平顺，一看就知道是假的。但是位图就不一样了，要想拍出还原度高的数码相片（或者用软件绘制出这样的图像）并不困难。只要像素足够高，位图就可以逼真地展现世间万象的纷繁细节，比如木材表面的纹理、皮肤上的毛孔、高低起伏的地貌等等。美中不足的是，位图是二维平面图，整个图像由无数个方块构成，而人们喜欢的往往是三维立体图（或曲面）。为了解决这个问题，一个两全其美的办法就是，用矢量图网格图形进行三维建模，然后将精美的位图图案“粘贴”上去（这就是上文提到过的纹理贴图），最后用各种巧妙的渲染手法加以美化。 这样做出来的效果足以以假乱真，人眼已经不可能分辨出它到底是拍摄出来的真实场景，还是用计算机生成的虚拟图像。现在的图形处理器不仅价格便宜，而且功能强大，连普通的手机都可以做出如照片般真实的图像。我们只是受制于自己的想象力罢了。计算机不受现实视角的局限，因此可以按照我们选择的任何风格渲染图像。无论我们想让一部电影或游戏看起来像手绘而成的漫画书，还是莫奈的感人画作，甚至是一只大黄蜂眼里的影像，计算机都可以做到。计算机上可以显示的图像不受现实事物的局限。它可以展示早已灭绝的恐龙在远古森林里漫步的情形，重现昔日繁华的都市未曾被胶片记录下来的荣光，展现宇宙中最微小的粒子乃至最宏大的星系，甚至还可以窥探人体的组织器官，分析大脑的神经机理。</li>
+<li>眼动追踪（eye-tracking）是另一项卓有成效的人机交互技术。人在使用计算机界面时，计算机会监测人的眼睛在屏幕上的注视点。研究人员可以借此分析界面是否太乱、是否具有吸引力、哪些部分未能吸引用户的目光。“富媒体〔10〕 （rich media）既有可能吸引眼球，也有可能干扰视线，”萨斯说，“人们浏览界面一般都是有目的的，他们会下意识地跳过某些无关紧要的信息，这样就在界面上造成了阅读盲点。” 通过眼动追踪技术，研究人员很快就能知道，怎样才能在最短的时间内给用户提供最有针对性的信息，或许还可以根据用户在界面上的注视点，动态地调整界面上显示的内容。“只要将智能界面和自适应技术〔11〕 结合起来，我们就能使用户在不受干扰的情况下快速找到自己想要的信息。”萨斯表示。</li>
+<li>富媒体是指使用浏览器插件或其他脚本语言、Java语言等编写的具有复杂视觉效果和交互功能的网络广告。</li>
+<li>从很早的时候开始，科学家就开始为计算机智能的发展方向争论不休。他们分成三派，第一派以麦卡锡为代表，认为逻辑推理是计算机智能化的必由之路。第二派以麦卡洛克、皮茨为代表，认为构建神经元模型才是正道。第三派以明斯基为代表，认为计算机要想实现智能化，就必须首先具备现实世界的知识。三派科学家在唇枪舌剑的争论中掀起了几轮炒作的热潮，此后，炒作谎言的破败使公众和投资界对人工智能的信心崩溃，人工智能领域几近衰落〔7〕 。在这一时期，明斯基正是站在风口浪尖上的关键人物。</li>
+<li>人工智能领域由此形成两派分庭抗礼之势。美国西海岸的研究人员以麦卡锡为首，称为“简约派”（the Neats），因为他们注重逻辑和证明。东海岸的研究人员则受明斯基的影响，称为“芜杂派”（the Scruffies）。 明斯基的方法并不是建立在数理逻辑的基础之上。他认为，单靠逻辑不足以创造出人工智能。所以他另辟蹊径，引入了一个新的概念，称为“框架”（frame）。我们知道，现实世界中的信息并不总是符合逻辑的，但它们一定可以反映这个世界的真实情况。框架〔10〕 就是一种可以存储这些“芜杂”数据的数据结构。根据语义网络理论，框架里的信息由多个槽〔11〕 、值〔12〕 以及类型组成。下面是一个描述“大象”的框架：</li>
+<li>缺省，即系统默认状态，意思与“默认”相同。</li>
+<li>大部分人工智能理论都是建立在符号处理的基础之上，现在，这一基础也饱受质疑。在符号处理的问题上，简约派和芜杂派区别不大，都在使用计算机操控符号。哲学家约翰·希尔勒〔15〕 （John Searle）将计算机比作一个待在“中文屋子”里的人。屋里的人不懂中文，但我们给这个人传递一条用中文写成的信息，他在文件柜里翻找合适的回复内容，最后用中文给我们回复了一条新的信息，而且由于他不懂中文，自然也不会理解信息的意思。在屋外的人看来，屋里看起来像是有一个以中文为母语的人，但事实上，这个人根本不懂中文。希尔勒认为，只会执行符号处理的计算机永远不会拥有智能，无论它们做出的成果有多么惊人，都不会改变这个事实。即使“聊天机器人”通过了图灵测试，它还是不懂它使用的文字，只不过是一台通晓测试游戏规则、且善于投人所好的邮件分拣机罢了。</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/书籍/" rel="tag"># 书籍</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/27/浪潮之巅笔记/" rel="next" title="浪潮之巅笔记">
+                <i class="fa fa-chevron-left"></i> 浪潮之巅笔记
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/05/超越与自卑的笔记/" rel="prev" title="超越与自卑的笔记">
+                超越与自卑的笔记 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div class="ds-thread" data-thread-key="2018/03/30/计算机-一部历史/"
+           data-title="计算机:一部历史的笔记" data-url="http://yoursite.com/2018/03/30/计算机-一部历史/">
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">空间</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#计算机：一部历史"><span class="nav-number">1.</span> <span class="nav-text">计算机：一部历史</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">空间</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"your-duoshuo-shortname"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
