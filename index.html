@@ -4,17 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>重新制作</title>
+  <title>主页</title>
+  <script src="src/vue/vue.js"></script>
 </head>
 <body>
-  <h3>这个是我重新制作的主页</h3>
-  <p>之所以删除日志是因为我习惯使用印象笔记来写. 而现在我需要的是一个我经常使用的主页</p>
-  <p>我现在关闭了翻墙的方式</p>
-  <p>我现在开启了翻墙的方式, 我想看看有没有用, 如果可以的话, 就使用翻墙的方式吧. // 使用vscode提交还是需要输入账户和密码 // 现在试试使用命令行是否依旧需要</p>
-  <p>现在试试ssl验证关闭之后呢?</p>
-  <!-- 改改试试我现在在 ssh 里面增加了config文件 -->
-  <!-- 改改试试我现在在 ssh 里面增加了config文件 现在使用了代理. 看看用不用登录了.-->
-  <!-- 也就是说, 只要使用了代理. 那么提交的时候就需要进行登录.每次都需要进行登录. 暂时这个问题对我来说无解. 所以暂时不使用代理提交了 -->
-  <!-- 再试一次.  -->
+  <div id="app">
+    <h1>
+      
+      {{msg}}
+    </h1>
+  </div>
+  <script>
+  app = new Vue({
+    el: "#app",
+    data: {
+      msg: "hello world"
+    }
+  })
+  </script>
 </body>
 </html>
