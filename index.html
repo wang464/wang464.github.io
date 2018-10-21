@@ -8,16 +8,23 @@
   <title>主页</title>
   <link rel="stylesheet" href="src/css/bootstrap.css">
   <link rel="stylesheet" href="src/css/index.css">
+  <script src="./src/js/vue.js"></script>
 </head>
 
 <body>
   <div class="container">
     <header></header>
     <nav></nav>
-    <main>
-      <p>明天把网格的布局搞清楚</p>
-      <p>今天先这样</p>
-      <input name="nih" id="nih" class="btn btn-info" type="button" value="uiu">
+    <main id="app">
+      <!-- 怎么写来着?
+      首先是一个文本框的数据绑定.单向数据绑定
+      之后是一个提交按钮的事件. 在事件里面增加
+      一个字符串拼接和提交.
+      -->
+      <input type="text" v-model="msg">
+      <br>
+      <a v-bind:href='"https://www.baidu.com/s?wd="+msg' target="_blank" accesskey="b">快捷键B</a>
+      <a v-bind:href='"https://www.baidu.com/s?wd="+msg+msg2' target="_blank" accesskey="n">快捷键n</a>
     </main>
     <aside>
       <!-- 右边的框里面的内容 -->
@@ -36,6 +43,18 @@
     </aside>
     <footer></footer>
   </div>
+  <script src="./src/js/jquery.min.js"></script>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        msg: "",
+        msg2:" site:stackoverflow.com"
+      },
+      methods: {
+      }
+    })
+  </script>
 
 </body>
 
