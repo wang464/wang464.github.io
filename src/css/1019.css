@@ -1,0 +1,10 @@
+body * {
+  border: 1px solid #c3c3c3;
+}
+main {
+  height: 530px;
+}
+
+nav, footer{
+  height: 108px;
+}
