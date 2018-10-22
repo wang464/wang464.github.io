@@ -1,34 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>主页</title>
   <link rel="stylesheet" href="src/css/bootstrap.css">
-  <link rel="stylesheet" href="src/css/1019.css">
-  <script src="./src/js/jquery.min.js"></script>
+  <link rel="stylesheet" href="src/css/index.css">
+  <script src="./src/js/vue.js"></script>
 </head>
-<body>
-  <nav class="container">
-    导航栏
-</nav>
-<main class="container">
-  <aside class="container">
-    左边
-  </aside>
-  <article class="container">
-    中间
-  </article>
-  <aside class="container">
-    右边
-  </aside>
-</main>
-<footer class="container">
-  页脚
-</footer>
-<script>
 
-</script>
+<body>
+  <div class="container">
+    <header></header>
+    <nav></nav>
+    <main id="app">
+      <!-- 怎么写来着?
+      首先是一个文本框的数据绑定.单向数据绑定
+      之后是一个提交按钮的事件. 在事件里面增加
+      一个字符串拼接和提交.
+      -->
+      <input type="text" v-model="msg" value="i">
+      <br>
+      <input type="text" v-model="site">
+      <a v-bind:href='"https://www.baidu.com/s?wd="+msg' target="_blank" accesskey="b">百度搜索</a>
+      <a v-bind:href='"https://www.baidu.com/s?wd="+msg+stackoverflow' target="_blank" accesskey="n">快捷键n</a>
+      <br>
+      <h3>搜狗搜索</h3>
+      <a v-bind:href='"https://www.sogou.com/web?query="+msg' target="_blank" accesskey="o">搜狗搜索O</a>
+      <a v-bind:href='"https://www.sogou.com/web?query="+msg+stackoverflow' target="_blank" >搜狗搜索{{stackoverflow}}</a>
+      <h3>必应搜索</h3>
+      <a v-bind:href='"http://www.bing.com/search?q="+msg' target="_blank" accesskey="l">必应国内L</a>
+      <a v-bind:href='"http://www.bing.com/search?q="+msg+site' target="_blank" >必应2</a>
+
+
+
+    </main>
+    <aside>
+      <!-- 右边的框里面的内容 -->
+      <input type="button" value="尝试">
+      <a href="https://lai.yuweining.cn/archives/909/#menu_index_1">种子搜索推荐</a>
+      <a href="http://tansuo233.com/">网盘搜索</a>
+      <a href="http://readfree.me/">书籍搜索</a>
+      <form id="main-search-form" class="" action="/search/" method="get" _lpchecked="1">
+        <input name="q" value="" placeholder="书名/作者/出版社/ISBN" type="text">
+        <button class="btn" type="submit">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </form>
+      <!-- 增加了一个文字区域. -->
+      <textarea class="form-control" rows="5"></textarea>
+    </aside>
+    <footer></footer>
+  </div>
+  <script src="./src/js/jquery.min.js"></script>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        msg: "",
+        stackoverflow:" site:stackoverflow.com",
+        site:" site:",
+        msg2:"stackoverflow.com"
+      },
+      methods: {
+      }
+    })
+  </script>
+
 </body>
+
 </html>
