@@ -7,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>主页</title>
   <link rel="stylesheet" href="src/css/bootstrap.css">
-  <link rel="stylesheet" href="src/css/index.css">
   <script src="./src/js/vue.js"></script>
 </head>
 
@@ -23,7 +22,7 @@
       -->
       <input type="text" v-model="msg" value="i">
       <br>
-      <input type="text" v-model="site">
+      <input type="text" v-model="msg2">
       <a v-bind:href='"https://www.baidu.com/s?wd="+msg' target="_blank" accesskey="b">百度搜索</a>
       <a v-bind:href='"https://www.baidu.com/s?wd="+msg+stackoverflow' target="_blank" accesskey="n">快捷键n</a>
       <br>
@@ -32,23 +31,14 @@
       <a v-bind:href='"https://www.sogou.com/web?query="+msg+stackoverflow' target="_blank" >搜狗搜索{{stackoverflow}}</a>
       <h3>必应搜索</h3>
       <a v-bind:href='"http://www.bing.com/search?q="+msg' target="_blank" accesskey="l">必应国内L</a>
-      <a v-bind:href='"http://www.bing.com/search?q="+msg+site' target="_blank" >必应2</a>
-
-
-
+      <a v-bind:href='"http://www.bing.com/search?q="+msg+site+msg2' target="_blank" >必应2</a>
+      <h3>搜索书籍</h3>
+      <a v-bind:href='"http://readfree.me/search/?q="+msg' target="_blank">书籍搜索</a>
+      <!-- 我能不能输入一个关键词同时打开多个网页? -->
+      <!-- window.open可以打开多个. 但浏览器一般不让打开多个, 因为这样看起来像是广告 -->
     </main>
     <aside>
-      <!-- 右边的框里面的内容 -->
-      <input type="button" value="尝试">
-      <a href="https://lai.yuweining.cn/archives/909/#menu_index_1">种子搜索推荐</a>
-      <a href="http://tansuo233.com/">网盘搜索</a>
-      <a href="http://readfree.me/">书籍搜索</a>
-      <form id="main-search-form" class="" action="/search/" method="get" _lpchecked="1">
-        <input name="q" value="" placeholder="书名/作者/出版社/ISBN" type="text">
-        <button class="btn" type="submit">
-          <i class="fa fa-search" aria-hidden="true"></i>
-        </button>
-      </form>
+      <!-- 是不是增加一个每日签到的地方呢? -->
       <!-- 增加了一个文字区域. -->
       <textarea class="form-control" rows="5"></textarea>
     </aside>
