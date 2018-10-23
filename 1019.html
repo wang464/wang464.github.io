@@ -23,19 +23,21 @@
       <input type="text" v-model="msg" value="i">
       <br>
       <input type="text" v-model="msg2">
-      <a v-bind:href='"https://www.baidu.com/s?wd="+msg' target="_blank" accesskey="b">百度搜索</a>
+      <a v-bind:href='"https://www.baidu.com/s?wd="+msg' target="_blank">百度搜索</a>
       <a v-bind:href='"https://www.baidu.com/s?wd="+msg+stackoverflow' target="_blank" accesskey="n">快捷键n</a>
       <br>
       <h3>搜狗搜索</h3>
-      <a v-bind:href='"https://www.sogou.com/web?query="+msg' target="_blank" accesskey="o">搜狗搜索O</a>
+      <a v-bind:href='"https://www.sogou.com/web?query="+msg' target="_blank">搜狗搜索O</a>
       <a v-bind:href='"https://www.sogou.com/web?query="+msg+stackoverflow' target="_blank" >搜狗搜索{{stackoverflow}}</a>
       <h3>必应搜索</h3>
-      <a v-bind:href='"http://www.bing.com/search?q="+msg' target="_blank" accesskey="l">必应国内L</a>
+      <a v-bind:href='"http://www.bing.com/search?q="+msg' target="_blank">必应国内L</a>
       <a v-bind:href='"http://www.bing.com/search?q="+msg+site+msg2' target="_blank" >必应2</a>
       <h3>搜索书籍</h3>
       <a v-bind:href='"http://readfree.me/search/?q="+msg' target="_blank">书籍搜索</a>
       <!-- 我能不能输入一个关键词同时打开多个网页? -->
       <!-- window.open可以打开多个. 但浏览器一般不让打开多个, 因为这样看起来像是广告 -->
+      <h3>微博</h3>
+      <a href="https://weibo.com/u/3817167767">微博</a>
     </main>
     <aside>
       <!-- 是不是增加一个每日签到的地方呢? -->
