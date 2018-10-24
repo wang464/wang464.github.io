@@ -39,7 +39,7 @@
           <div class="input-group">
               <input type="text" class="form-control" v-model="msg">
               <div class="input-group-append">
-                <button class="btn btn-success" type="button"><a v-bind:href='"https://www.google.com/search?q="+msg' target="_blank">谷歌</a> </button>
+                <div class="btn btn-success"><a v-bind:href='"https://www.google.com/search?q="+msg' target="_blank">谷歌</a> </div>
               </div>
             </div>
           <br>
@@ -47,21 +47,21 @@
           <!-- 右对齐float-right -->
           <div class="btn-group">
             <!-- <button type="button" class="btn btn-light"><a v-bind:href='"https://www.google.com/search?q="+msg' target="_blank">谷歌</a></button> -->
-            <button type="button" class="btn btn-light"><a v-bind:href='"https://www.baidu.com/s?wd="+msg' target="_blank">百度</a></button>
-            <button type="button" class="btn btn-light"><a v-bind:href='"https://www.sogou.com/web?query="+msg' target="_blank">搜狗</a></button>
-            <button type="button" class="btn btn-light"><a v-bind:href='"https://www.bing.com/search?q="+msg' target="_blank">必应</a></button>
+            <div class="btn btn-light"><a v-bind:href='"https://www.baidu.com/s?wd="+msg' target="_blank">百度</a></div>
+            <div class="btn btn-light"><a v-bind:href='"https://www.sogou.com/web?query="+msg' target="_blank">搜狗</a></div>
+            <div class="btn btn-light"><a v-bind:href='"https://www.bing.com/search?q="+msg' target="_blank">必应</a></div>
           </div>
           <br>
           <!-- stackoverflow -->
           <div class="btn-group">
-            <button type="button" class="btn btn-light"><a v-bind:href='"https://www.google.com/search?q="+msg+stackoverflow'
-                target="_blank">stackoverflow</a></button>
-            <button type="button" class="btn btn-light "><a v-bind:href='"https://www.baidu.com/s?wd="+msg+stackoverflow'
-                target="_blank">百度</a></button>
-            <button type="button" class="btn btn-light"><a v-bind:href='"https://www.sogou.com/web?query="+msg+stackoverflow'
-                target="_blank">搜狗</a></button>
-            <button type="button" class="btn btn-light"><a v-bind:href='"https://www.bing.com/search?q="+msg+stackoverflow'
-                target="_blank">必应</a></button>
+            <div class="btn btn-light"><a v-bind:href='"https://www.google.com/search?q="+msg+stackoverflow'
+                target="_blank">stackoverflow</a></div>
+            <div class="btn btn-light "><a v-bind:href='"https://www.baidu.com/s?wd="+msg+stackoverflow'
+                target="_blank">百度</a></div>
+            <div class="btn btn-light"><a v-bind:href='"https://www.sogou.com/web?query="+msg+stackoverflow'
+                target="_blank">搜狗</a></div>
+            <div class="btn btn-light"><a v-bind:href='"https://www.bing.com/search?q="+msg+stackoverflow'
+                target="_blank">必应</a></div>
           </div>
         </div>
         <br>
