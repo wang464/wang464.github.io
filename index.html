@@ -5,46 +5,91 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" type="image/x-icon" href="https://static.zhihu.com/static/favicon.ico">
   <title>主页</title>
-  <link rel="stylesheet" href="src/css/bootstrap.css">
+  <!-- 图标 -->
+  <link rel="shortcut icon" type="image/x-icon" href="https://static.zhihu.com/static/favicon.ico">
+  <!-- BS -->
+  <link rel="stylesheet" href="./src/css/bootstrap.css">
+  <!-- 自定义 -->
+  <link rel="stylesheet" href="./src/css/1019.css">
   <script src="./src/js/vue.js"></script>
 </head>
 
 <body>
-  <div class="container">
-    <header></header>
-    <nav></nav>
-    <main id="app">
-      <!-- 怎么写来着?
-      首先是一个文本框的数据绑定.单向数据绑定
-      之后是一个提交按钮的事件. 在事件里面增加
-      一个字符串拼接和提交.
-      -->
-      <input type="text" v-model="msg" value="i">
-      <br>
-      <input type="text" v-model="msg2">
-      <a v-bind:href='"https://www.baidu.com/s?wd="+msg' target="_blank">百度搜索</a>
-      <a v-bind:href='"https://www.baidu.com/s?wd="+msg+stackoverflow' target="_blank" accesskey="n">快捷键n</a>
-      <br>
-      <h3>搜狗搜索</h3>
-      <a v-bind:href='"https://www.sogou.com/web?query="+msg' target="_blank">搜狗搜索O</a>
-      <a v-bind:href='"https://www.sogou.com/web?query="+msg+stackoverflow' target="_blank" >搜狗搜索{{stackoverflow}}</a>
-      <h3>必应搜索</h3>
-      <a v-bind:href='"http://www.bing.com/search?q="+msg' target="_blank">必应国内L</a>
-      <a v-bind:href='"http://www.bing.com/search?q="+msg+site+msg2' target="_blank" >必应2</a>
-      <h3>搜索书籍</h3>
-      <a v-bind:href='"http://readfree.me/search/?q="+msg' target="_blank">书籍搜索</a>
-      <!-- 我能不能输入一个关键词同时打开多个网页? -->
-      <!-- window.open可以打开多个. 但浏览器一般不让打开多个, 因为这样看起来像是广告 -->
-      <h3>微博</h3>
-      <a href="https://weibo.com/u/3817167767">微博</a>
-    </main>
-    <aside>
-      <!-- 是不是增加一个每日签到的地方呢? -->
-      <!-- 增加了一个文字区域. -->
-      <textarea class="form-control" rows="5"></textarea>
-    </aside>
+  <!-- 导航栏 -->
+  <nav class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" href="#!">怎么设置</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#!"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#!"></a>
+    </li>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <aside class="col-xl-3">
+      </aside>
+      <main class="col-xl-5" id="app">
+        <!-- TODO:  搜索-->
+        <div class="container">
+          <!-- 搜索框 -->
+          <div class="input-group">
+              <input type="text" class="form-control" v-model="msg">
+              <div class="input-group-append">
+                <button class="btn btn-success" type="button"><a v-bind:href='"https://www.google.com/search?q="+msg' target="_blank">谷歌</a> </button>
+              </div>
+            </div>
+          <br>
+          <!-- 没有site -->
+          <!-- 右对齐float-right -->
+          <div class="btn-group">
+            <!-- <button type="button" class="btn btn-light"><a v-bind:href='"https://www.google.com/search?q="+msg' target="_blank">谷歌</a></button> -->
+            <button type="button" class="btn btn-light"><a v-bind:href='"https://www.baidu.com/s?wd="+msg' target="_blank">百度</a></button>
+            <button type="button" class="btn btn-light"><a v-bind:href='"https://www.sogou.com/web?query="+msg' target="_blank">搜狗</a></button>
+            <button type="button" class="btn btn-light"><a v-bind:href='"https://www.bing.com/search?q="+msg' target="_blank">必应</a></button>
+          </div>
+          <br>
+          <!-- stackoverflow -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-light"><a v-bind:href='"https://www.google.com/search?q="+msg+stackoverflow'
+                target="_blank">stackoverflow</a></button>
+            <button type="button" class="btn btn-light "><a v-bind:href='"https://www.baidu.com/s?wd="+msg+stackoverflow'
+                target="_blank">百度</a></button>
+            <button type="button" class="btn btn-light"><a v-bind:href='"https://www.sogou.com/web?query="+msg+stackoverflow'
+                target="_blank">搜狗</a></button>
+            <button type="button" class="btn btn-light"><a v-bind:href='"https://www.bing.com/search?q="+msg+stackoverflow'
+                target="_blank">必应</a></button>
+          </div>
+        </div>
+        <br>
+        <!-- 尝试多个按钮 -->
+
+
+
+      </main>
+      <!-- TODO:常用网站 -->
+      <aside class="col-xl-1">
+        <button class="btn btn-block"><a href="https://hackerthemes.com/bootstrap-cheatsheet/" target="_blank">BS速查</a></button>
+        <button class="btn btn-block"><a href="https://github.com/wang464" target="_blank">GitHub</a></button>
+        <button class="btn btn-block"><a href="https://dev.tencent.com/u/wang464/p/index" target="_blank">腾讯云</a></button>
+        <button class="btn btn-block"><a href="http://fanyi.youdao.com/" target="_blank">有道翻译</a></button>
+        <button class="btn btn-block"><a href="https://translate.google.cn/" target="_blank">谷歌翻译</a></button>
+      </aside>
+      <!-- 娱乐区 -->
+      <aside class="col-xl-1">
+        <button class="btn btn-block"><a target="_blank" href="https://weibo.com/u/3817167767">微博</a></button>
+        <button class="btn btn-block"><a target="_blank" href="https://www.zhihu.com/people/lu-lu-57-78/activities">吕知乎</a></button>
+        <button class="btn btn-block"><a target="_blank" href="https://music.163.com/#/user/home?id=112994032">吕音乐</a></button>
+        <button class="btn btn-block"><a target="_blank" href="https://music.163.com/#/user/home?id=395479643">Y</a></button>
+        <button class="btn btn-block"><a target="_blank" href="http://bilibili.com/">B站</a></button>
+        <button class="btn btn-block"><a target="_blank" href="https://www.runoob.com/">菜鸟</a></button>
+        <button class="btn btn-block"><a target="_blank" href="https://douban.fm/">豆瓣FM</a></button>
+        <button class="btn btn-block"><a target="_blank" href="http://readfree.me/">看书</a></button>
+      </aside>
+    </div>
     <footer></footer>
   </div>
   <script src="./src/js/jquery.min.js"></script>
@@ -53,9 +98,9 @@
       el: '#app',
       data: {
         msg: "",
-        stackoverflow:" site:stackoverflow.com",
-        site:" site:",
-        msg2:"stackoverflow.com"
+        stackoverflow: " site:stackoverflow.com",
+        site: " site:",
+        msg2: "stackoverflow.com"
       },
       methods: {
       }

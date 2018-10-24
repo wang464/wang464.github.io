@@ -18,5 +18,6 @@
   // 显示缩进
   "editor.renderWhitespace": "all",
   // 另外一个
-  "cssModules.camelCase": true
+  "cssModules.camelCase": true,
+
 }
