@@ -37,57 +37,49 @@
         <div class="container">
           <!-- 搜索框 -->
           <div class="input-group">
-              <input type="text" class="form-control" v-model="msg">
-              <div class="input-group-append">
-                <div class="btn btn-success"><a v-bind:href='"https://www.google.com/search?q="+msg' target="_blank">谷歌</a> </div>
-              </div>
+            <input type="text" class="form-control" v-model="msg">
+            <div class="input-group-append">
+              <a class="btn btn-success" v-bind:href='"https://www.google.com/search?q="+msg' target="_blank">谷歌</a>
             </div>
+          </div>
           <br>
           <!-- 没有site -->
           <!-- 右对齐float-right -->
           <div class="btn-group">
             <!-- <button type="button" class="btn btn-light"><a v-bind:href='"https://www.google.com/search?q="+msg' target="_blank">谷歌</a></button> -->
-            <div class="btn btn-light"><a v-bind:href='"https://www.baidu.com/s?wd="+msg' target="_blank">百度</a></div>
-            <div class="btn btn-light"><a v-bind:href='"https://www.sogou.com/web?query="+msg' target="_blank">搜狗</a></div>
-            <div class="btn btn-light"><a v-bind:href='"https://www.bing.com/search?q="+msg' target="_blank">必应</a></div>
+            <a class="btn btn-light" v-bind:href='"https://www.baidu.com/s?wd="+msg' target="_blank">百度</a>
+            <a class="btn btn-light" v-bind:href='"https://www.sogou.com/web?query="+msg' target="_blank">搜狗</a>
+            <a class="btn btn-light" v-bind:href='"https://www.bing.com/search?q="+msg' target="_blank">必应</a>
           </div>
           <br>
           <!-- stackoverflow -->
           <div class="btn-group">
-            <div class="btn btn-light"><a v-bind:href='"https://www.google.com/search?q="+msg+stackoverflow'
-                target="_blank">stackoverflow</a></div>
-            <div class="btn btn-light "><a v-bind:href='"https://www.baidu.com/s?wd="+msg+stackoverflow'
-                target="_blank">百度</a></div>
-            <div class="btn btn-light"><a v-bind:href='"https://www.sogou.com/web?query="+msg+stackoverflow'
-                target="_blank">搜狗</a></div>
-            <div class="btn btn-light"><a v-bind:href='"https://www.bing.com/search?q="+msg+stackoverflow'
-                target="_blank">必应</a></div>
+            <a class="btn btn-light" v-bind:href='"https://www.google.com/search?q="+msg+stackoverflow' target="_blank">stackoverflow</a>
+            <a class="btn btn-light" v-bind:href='"https://www.baidu.com/s?wd="+msg+stackoverflow' target="_blank">百度</a>
+            <a class="btn btn-light" v-bind:href='"https://www.sogou.com/web?query="+msg+stackoverflow' target="_blank">搜狗</a>
+            <a class="btn btn-light" v-bind:href='"https://www.bing.com/search?q="+msg+stackoverflow' target="_blank">必应</a>
           </div>
-        </div>
-        <br>
-        <!-- 尝试多个按钮 -->
-
-
-
+          <br>
+          <!-- 尝试多个按钮 -->
       </main>
       <!-- TODO:常用网站 -->
       <aside class="col-xl-1">
-        <div class="btn btn-light"><a href="https://hackerthemes.com/bootstrap-cheatsheet/" target="_blank">BS速查</a></div>
-        <div class="btn btn-light"><a href="https://github.com/wang464" target="_blank">GitHub</a></div>
-        <div class="btn btn-light"><a href="https://dev.tencent.com/u/wang464/p/index" target="_blank">腾讯云</a></div>
-        <div class="btn btn-light"><a href="http://fanyi.youdao.com/" target="_blank">有道翻译</a></div>
-        <div class="btn btn-light"><a href="https://translate.google.cn/" target="_blank">谷歌翻译</a></div>
+        <a class="btn btn-light" href="https://hackerthemes.com/bootstrap-cheatsheet/" target="_blank">BS速查</a>
+        <a class="btn btn-light" href="https://github.com/wang464" target="_blank">GitHub</a>
+        <a class="btn btn-light" href="https://dev.tencent.com/u/wang464/p/index" target="_blank">腾讯云</a>
+        <a class="btn btn-light" href="http://fanyi.youdao.com/" target="_blank">有道翻译</a>
+        <a class="btn btn-light" href="https://translate.google.cn/" target="_blank">谷歌翻译</a>
       </aside>
       <!-- 娱乐区 -->
       <aside class="col-xl-1">
-        <div class="btn btn-light"><a target="_blank" href="https://weibo.com/u/3817167767">微博</a></div>
-        <div class="btn btn-light"><a target="_blank" href="https://www.zhihu.com/people/lu-lu-57-78/activities">吕知乎</a></div>
-        <div class="btn btn-light"><a target="_blank" href="https://music.163.com/#/user/home?id=112994032">吕音乐</a></div>
-        <div class="btn btn-light"><a target="_blank" href="https://music.163.com/#/user/home?id=395479643">Y音乐</a></div>
-        <div class="btn btn-light"><a target="_blank" href="http://bilibili.com/">B站</a></div>
-        <div class="btn btn-light"><a target="_blank" href="https://www.runoob.com/">菜鸟</a></div>
-        <div class="btn btn-light"><a target="_blank" href="https://douban.fm/">豆瓣FM</a></div>
-        <div class="btn btn-light"><a target="_blank" href="http://readfree.me/">看书</a></div>
+        <a class="btn btn-light" target="_blank" href="https://weibo.com/u/3817167767">微博</a>
+        <a class="btn btn-light" target="_blank" href="https://www.zhihu.com/people/lu-lu-57-78/activities">吕知乎</a>
+        <a class="btn btn-light" target="_blank" href="https://music.163.com/#/user/home?id=112994032">吕音乐</a>
+        <a class="btn btn-light" target="_blank" href="https://music.163.com/#/user/home?id=395479643">Y音乐</a>
+        <a class="btn btn-light" target="_blank" href="http://bilibili.com/">B站</a>
+        <a class="btn btn-light" target="_blank" href="https://www.runoob.com/">菜鸟</a>
+        <a class="btn btn-light" target="_blank" href="https://douban.fm/">豆瓣FM</a>
+        <a class="btn btn-light" target="_blank" href="http://readfree.me/">看书</a>
       </aside>
     </div>
     <footer></footer>
@@ -107,7 +99,6 @@
       }
     })
   </script>
-
 </body>
 
 </html>
