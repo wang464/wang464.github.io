@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>尝试加入搜索功能</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" >
+</head>
+
+<body>
+
+  <div class="ui-widget">
+    <label for="tags">Tags: </label>
+    <input id="tags">
+    <a href="#">你好</a>
+    <a href="#">你我</a>
+    <a href="#">你他</a>
+    <a href="#">你111</a>
+    <a href="#">你33</a>
+  </div>
+  <div class="card text-center">
+
+      <h5 class="card-header">技术速查表</h5>
+      <div class="card-body">
+        <!-- 技术速查表 -->
+        <a class="btn btn-light" href="https://love2.io/@meiritugua/doc/front-end-handbook/README.md">开发者手册1</a>
+        <a class="btn btn-light" href="https://love2.io/@funkkiid/doc/front-end-handbook-2017/tools/browsedocs.md">开发者手册2</a>
+        <a class="btn btn-light" href="http://www.runoob.com/bootstrap4/bootstrap4-tutorial.html">菜鸟BS</a>
+        <a class="btn btn-light" href="https://cloud.tencent.com/developer/doc/1018">腾讯云BS</a>
+        <a class="btn btn-light" href="https://hackerthemes.com/bootstrap-cheatsheet/">我常用的BS站</a>
+        <a class="btn btn-light" href="https://hackerthemes.com/bootstrap-cheatsheet/" target="_blank">BS速查</a>
+        <a class="btn btn-light" href="https://github.com/wang464" target="_blank">GitHub</a>
+        <a class="btn btn-light" href="https://dev.tencent.com/u/wang464/p/index" target="_blank">腾讯云</a>
+        <a class="btn btn-light" href="http://fanyi.youdao.com/" target="_blank">有道翻译</a>
+        <a class="btn btn-light" href="https://translate.google.cn/" target="_blank">谷歌翻译</a>
+        <a class="btn btn-light" href="https://www.v2ex.com">V2EX</a>
+      </div>
+    </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+
+    $(function () {
+      var availableTags = document.getElementsByTagName('a');
+      var arr = [];
+      for (let index = 0; index < availableTags.length; index++) {
+        const element = availableTags[index];
+        console.log(element.text);
+        arr.push(element.text)
+      }
+      console.log(arr.length);
+      // console.log(availableTags[0].text);
+      console.log(availableTags.length);
+      $("#tags").autocomplete({
+        source: arr
+      });
+    });
+    //  后续写法:  查找选定的字符串是在列表的第几位.  找到之后
+    //  确定第几位之后将availableTags[位置].link 找到位置的链接.
+    //  将链接在新的页面打开.
+  </script>
+</body>
+
+</html>

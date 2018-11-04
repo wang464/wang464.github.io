@@ -1,23 +1,11 @@
 {
-  "cSpell.words": [
-    "bing",
-    "noopener",
-    "noreferrer",
-    "setlang",
-    "setmarket"
-  ],
   // 设置html标签重命名 html尾部自动闭合
   "auto-rename-tag.activationOnLanguage": [
     "html",
     "xml",
     "php",
     "javascript"
-],
-  //自动补全类名
-  "html-css-class-completion.enableEmmetSupport" : true,
-  // 显示缩进
+  ],
   "editor.renderWhitespace": "all",
   // 另外一个
-  "cssModules.camelCase": true,
-
 }
