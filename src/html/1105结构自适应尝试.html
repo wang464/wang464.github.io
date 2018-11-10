@@ -71,6 +71,7 @@
         <a class="btn btn-light" href="http://fanyi.youdao.com/" target="_blank">有道翻译</a>
         <a class="btn btn-light" href="https://translate.google.cn/" target="_blank">谷歌翻译</a>
         <a class="btn btn-light" href="https://www.v2ex.com">V2EX</a>
+        <a class="btn btn-light" href="#" onclick="open_win()">打开新网页</a>
       </aside>
     </div>
   </main>
@@ -78,7 +79,31 @@
     <!-- 页尾巴 -->
 
   </footer>
+  <script>
+    // a标签的名称的集合
+    var links = document.links
+    var arr = [];  // 储存a标签的名称
+    var arr_indexof = [];   // 储存链接
+    for (var i = 0; i < links.length; i++) {
+      arr.push(links[i].innerText);
+      arr_indexof.push(links[i].href);
+    }
+    // console.log(arr);  // 标签名称
+    // console.log(arr_indexof); // 链接内容
 
+    // 查找关键词
+    function fuzzyQuery(list, keyWord) {
+      var arr = [];
+      for (var i = 0; i < list.length; i++) {
+        if (list[i].split(keyWord).length > 1) {
+          arr.push(list[i]);
+        }
+      }
+      return arr;
+    }
+
+
+  </script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>

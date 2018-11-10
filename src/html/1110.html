@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>打开标签页</title>
+</head>
+
+<body>
+  <a id="demo" href="https://www.baidu.com/">id="demo" 的 p 元素</a>
+  <button onclick="open_win()">打开</button>
+  <button onclick="myFunction()">打开链接</button>
+  <script>
+     var mylist  = ["你好","我不好","我很好","王大锤"];
+     var mm = "你好"
+
+    // 查找集合里面有没有我输入的文字.
+    function fuzzyQuery(list, keyWord) {
+      var arr = [];
+      for (var i = 0; i < list.length; i++) {
+        if (list[i].split(keyWord).length > 1) {
+          arr.push(list[i]);
+        }
+      }
+      return arr;
+    }
+
+
+
+    var mdd = fuzzyQuery(mylist, mm);
+    function open_win() {
+      window.open("https://www.baidu.com/s?wd=" + mdd);
+    }
+
+    // 用来试试能不能直接找到html的a标签里面的问题
+    function myFunction() {
+      window.open(mdd);
+    }
+  </script>
+</body>
+
+</html>
